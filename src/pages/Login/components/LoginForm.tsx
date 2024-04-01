@@ -1,10 +1,12 @@
 // src/components/LoginForm.tsx
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
+  const navigate = useNavigate();
+
   const [showPassword, setShowPassword] = useState(false);
 
   const formik = useFormik({
@@ -19,6 +21,7 @@ const LoginForm: React.FC = () => {
     onSubmit: values => {
       // Your login logic here (e.g., API request)
       console.log("Form submitted:", values);
+      navigate("/home");
     },
   });
 
