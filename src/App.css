@@ -13,7 +13,6 @@ li {
 }
 
 nav {
-    width: 55rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +20,6 @@ nav {
 }
 
 nav a {
-    font-size: 2rem;
     color: #534f4bf3;
     border-bottom: .3rem solid transparent;
 }
@@ -39,7 +37,6 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    width: 50rem;
     min-height: 6rem;
     border-bottom: .1rem solid #ccc;
 }
@@ -58,8 +55,8 @@ li input[type="checkbox"]:checked+label {
 }
 
 li button {
-    padding: .6rem 1rem;
-    width: 7rem;
+    padding: 5px;
+    width: 5rem;
     background-color: #D14D72;
     color: #FFF9F9;
     border: none;
@@ -71,10 +68,10 @@ li button {
 
 #deleteAll {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 10px 20px;
-    width: 14rem;
+    padding: 5px 10px;
+    width: 10rem;
     background-color: #fff;
     color: black;
     border: transparent;

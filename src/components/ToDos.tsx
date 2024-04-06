@@ -18,10 +18,12 @@ const ToDos = () => {
 
   return (
     <>
-      <ul className="main-task">
+      <ul className="main-task mt-2">
+        {filterToDo.length === 0 ? <p>No Data</p> : ""}
         {filterToDo.map(todo => {
           return (
-            <li key={todo.id}>
+            <li key={todo.id} className="w-full sm:w-80">
+              {" "}
               <input
                 type="checkbox"
                 id={`todo-${todo.id}`}

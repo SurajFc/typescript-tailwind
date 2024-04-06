@@ -5,8 +5,8 @@ import ToDos from "../../components/ToDos";
 
 const Home = () => {
   return (
-    <div className="h-screen w-100 flex flex-col items-center justify-center">
-      <h2>My TODO</h2>
+    <div className="h-screen w-100 flex flex-col items-center">
+      <p className="text-4xl mt-10">My TODO</p>
       <NavBar />
       <AddToDo />
       <ToDos />
